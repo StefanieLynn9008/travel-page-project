@@ -55,6 +55,62 @@ header a {
   display: inline-block;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 50px;
+}
+
+section {
+  max-width: 1200px;
+  margin: auto;
+}
+
+footer {
+  color: #fff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/london3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px;
+}
+
+footer h3 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+footer p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.6;
+}
+
+footer ul {
+  padding: 0;
+  color: #fff;
+}
+
+footer li {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: #fff;
+  opacity: 0.7;
+}
+
 @media (max-width: 900px) {
   header {
     padding: 60px 0;
