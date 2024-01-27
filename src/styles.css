@@ -55,7 +55,7 @@ header a {
   display: inline-block;
 }
 
-main {
+body {
   background-color: #fff;
 }
 
@@ -65,7 +65,6 @@ main img {
 
 main h2 {
   font-size: 40px;
-  font-style: normal;
   font-weight: 700;
   line-height: 50px;
   margin: 0;
@@ -73,7 +72,6 @@ main h2 {
 
 main h3 {
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
   line-height: 1.5;
   letter-spacing: 5px;
@@ -83,10 +81,53 @@ main h3 {
 
 main p {
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 1.5;
   opacity: 0.7;
+}
+
+main h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+}
+
+main p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0.7;
+}
+
+main h5 {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+}
+
+.card a {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 16px 32px;
+  background-color: #462cb2;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .grid {
@@ -98,14 +139,33 @@ main p {
   grid-template-columns: 1fr 1fr;
 }
 
+.grid-3-columns {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
 .grid-3-columns-with-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
+  max-width: 100%;
+}
+
+.card {
+  background-color: #fff;
+}
+
+.card-body {
+  padding: 30px;
 }
 
 section {
-  max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
   padding: 100px;
+}
+
+.secondary-section {
+  background-color: #f8f8f8;
 }
 
 footer {
@@ -117,10 +177,11 @@ footer {
   padding: 100px;
 }
 
-footer h3 {
-  font-size: 20px;
+footer h3,
+footer li {
+  font-size: 16px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   line-height: normal;
 }
 
@@ -138,11 +199,6 @@ footer ul {
 }
 
 footer li {
-  color: #fff;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -150,7 +206,7 @@ footer li {
 
 footer a {
   color: #fff;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 @media (max-width: 900px) {
